@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirsten von Fürstenberg — Coaching & Beratung Geilenkirchen</title>
+<meta name="description" content="Klarheit gewinnen, Lösungen entwickeln, handlungsfähig sein. Business & Personal Coaching in Geilenkirchen. Kostenloses Erstgespräch.">
+<meta name="keywords" content="Coaching Geilenkirchen, Business Coaching, Personal Coaching, Führungskräfte Coaching, wingwave, Supervision, Resilienztraining">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Google Ads gtag - Consent Default Denied -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });
+</script>
+<!-- End gtag consent -->
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #2D5A3D;
+  --primary-light: #3A7550;
+  --secondary: #C4933F;
+  --secondary-light: #D4A85A;
+  --cream: #F8F5F0;
+  --cream-dark: #EDE8E0;
+  --text: #1A1A1A;
+  --text-light: #5A5A5A;
+  --white: #FFFFFF;
+  --card-bg: rgba(45, 90, 61, 0.02);
+  --card-border: rgba(45, 90, 61, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.1);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* =================== TYPOGRAPHY =================== */
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; line-height: 1.2; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+p { font-size: clamp(1rem, 1.1vw, 1.1rem); }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* =================== LAYOUT =================== */
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+section { padding: 100px 0; }
+
+/* =================== BUTTONS =================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 60px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--primary-light); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn-secondary:hover { background: var(--primary); color: var(--white); }
+.btn-gold {
+  background: var(--secondary);
+  color: var(--white);
+}
+.btn-gold:hover { background: var(--secondary-light); transform: translateY(-2px); }
+
+/* =================== NAVIGATION =================== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  transition: var(--transition);
+  background: transparent;
+}
+nav.scrolled {
+  background: rgba(248, 245, 240, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 0;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.nav-logo img { height: 48px; transition: var(--transition); }
+nav.scrolled .nav-logo img { height: 40px; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: var(--transition);
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  padding: 10px 24px !important;
+  background: var(--primary) !important;
+  color: var(--white) !important;
+  border-radius: 60px !important;
+  font-size: 0.9rem !important;
+}
+.nav-cta:hover { background: var(--primary-light) !important; }
+.nav-cta::after { display: none !important; }
+
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--cream);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    z-index: 999;
+  }
+  .nav-links.open a { font-size: 1.3rem; }
+  .mobile-toggle { display: block; z-index: 1001; }
+}
+
+/* =================== HERO =================== */
+.hero {
+  padding: 160px 0 100px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(170deg, var(--cream) 0%, var(--cream-dark) 50%, rgba(45,90,61,0.05) 100%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero-content { position: relative; z-index: 2; }
+.hero-h1-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: wordReveal 0.6s forwards;
+}
+@keyframes wordReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-sub {
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  color: var(--text-light);
+  margin: 24px 0 36px;
+  max-width: 520px;
+  line-height: 1.8;
+}
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--card-border);
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+.trust-item i { color: var(--secondary); width: 18px; height: 18px; }
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.hero-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.hero-image-accent {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(196, 147, 63, 0.12);
+  z-index: -1;
+}
+.hero-image-accent-2 {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(45, 90, 61, 0.07);
+  z-index: -1;
+}
+
+/* Decorative Clarity motif */
+.clarity-line {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+  opacity: 0.3;
+}
+.clarity-line-1 { top: 20%; right: -60px; transform: rotate(-25deg); }
+.clarity-line-2 { bottom: 30%; left: -40px; transform: rotate(15deg); }
+
+@media (max-width: 900px) {
+  .hero { padding: 120px 0 60px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-image { order: -1; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .hero-trust { flex-wrap: wrap; }
+}
+
+/* =================== ATMOSPHERE BAND =================== */
+.atmosphere-band {
+  padding: 60px 0;
+  background: var(--primary);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.atmosphere-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.counter-item .counter-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--secondary);
+  display: block;
+}
+.counter-item .counter-label {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+@media (max-width: 700px) {
+  .counter-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+}
+
+/* =================== PROBLEM SECTION =================== */
+.problem-section { background: var(--white); }
+.problem-section .section-intro { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+.problem-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.problem-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+}
+.problem-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.problem-card i { color: var(--secondary); margin-bottom: 16px; }
+.problem-card h3 { font-size: 1.15rem; margin-bottom: 12px; }
+.problem-card p { color: var(--text-light); font-size: 0.95rem; }
+@media (max-width: 700px) {
+  .problem-cards { grid-template-columns: 1fr; }
+}
+
+/* =================== SIGNATURE FEATURE — KLARHEITS-CHECK =================== */
+.signature-feature {
+  background: linear-gradient(170deg, var(--cream) 0%, rgba(45,90,61,0.04) 100%);
+  position: relative;
+}
+.quiz-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--card-border);
+}
+.quiz-progress {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.quiz-progress .step {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--cream-dark);
+  transition: var(--transition);
+}
+.quiz-progress .step.active { background: var(--secondary); }
+.quiz-progress .step.done { background: var(--primary); }
+.quiz-question {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  margin-bottom: 32px;
+  min-height: 60px;
+}
+.quiz-options { display: flex; flex-direction: column; gap: 12px; }
+.quiz-option {
+  padding: 18px 24px;
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--cream);
+  text-align: left;
+}
+.quiz-option:hover { border-color: var(--primary); background: rgba(45,90,61,0.04); }
+.quiz-option.selected { border-color: var(--primary); background: rgba(45,90,61,0.08); font-weight: 500; }
+
+.quiz-result {
+  text-align: center;
+  display: none;
+}
+.quiz-result h3 { margin-bottom: 16px; color: var(--primary); font-size: 1.6rem; }
+.quiz-result p { color: var(--text-light); margin-bottom: 32px; font-size: 1.05rem; line-height: 1.8; }
+.quiz-result .result-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: 60px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .quiz-wrapper { padding: 32px 20px; }
+}
+
+/* =================== SOLUTION / ANGEBOTE =================== */
+.solution-section { background: var(--white); }
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.solution-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--secondary);
+  opacity: 0;
+  transition: var(--transition);
+}
+.solution-card:hover::before { opacity: 1; }
+.solution-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.solution-card i { color: var(--primary); margin-bottom: 16px; }
+.solution-card h3 { margin-bottom: 10px; }
+.solution-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 16px; }
+.solution-card .card-link {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+.solution-card .card-link:hover { gap: 10px; color: var(--secondary); }
+
+@media (max-width: 700px) {
+  .solution-grid { grid-template-columns: 1fr; }
+}
+
+/* =================== SOCIAL PROOF =================== */
+.proof-section {
+  background: var(--cream);
+  position: relative;
+}
+.testimonial-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+.testimonial-carousel::-webkit-scrollbar { display: none; }
+.testimonial-card {
+  min-width: 360px;
+  max-width: 420px;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  border: 1px solid var(--card-border);
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  position: relative;
+}
+.testimonial-card .quote-mark {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--secondary);
+  opacity: 0.3;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  left: 28px;
+}
+.testimonial-card blockquote {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-top: 24px;
+  font-style: italic;
+}
+.testimonial-card .author {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--card-border);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.testimonial-card .author span {
+  display: block;
+  font-weight: 300;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .testimonial-card { min-width: 300px; }
+}
+
+/* =================== PROCESS =================== */
+.process-section { background: var(--white); }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 60px;
+}
+.process-step {
+  text-align: center;
+  position: relative;
+}
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 32px;
+  right: -16px;
+  width: 32px;
+  height: 2px;
+  background: var(--secondary);
+  opacity: 0.4;
+}
+.process-step:last-child::after { display: none; }
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--secondary);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.process-step h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.process-step p { font-size: 0.9rem; color: var(--text-light); }
+
+@media (max-width: 700px) {
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 40px 24px; }
+  .process-step::after { display: none; }
+}
+
+/* =================== ÜBER MICH =================== */
+.about-section { background: var(--cream); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.45fr 0.55fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.about-image img { width: 100%; display: block; object-fit: cover; }
+.about-content .about-text { color: var(--text-light); margin-bottom: 20px; }
+.about-qualifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+.qual-tag {
+  padding: 8px 16px;
+  background: rgba(45,90,61,0.06);
+  border-radius: 60px;
+  font-size: 0.82rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+@media (max-width: 700px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-image { order: -1; }
+}
+
+/* =================== CTA BAND =================== */
+.cta-band {
+  padding: 80px 0;
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+.cta-band h2 { color: var(--white); margin-bottom: 16px; position: relative; }
+.cta-band p { opacity: 0.85; margin-bottom: 36px; font-size: 1.1rem; max-width: 500px; margin-left: auto; margin-right: auto; position: relative; }
+.cta-band .btn-gold { position: relative; }
+
+/* =================== KONTAKT — LETZTE SEITE =================== */
+.contact-section {
+  background: var(--white);
+  padding: 100px 0 80px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.contact-info h2 { margin-bottom: 20px; }
+.contact-info > p { color: var(--text-light); margin-bottom: 36px; }
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.contact-detail .icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-detail .icon-circle i { color: var(--primary); width: 20px; height: 20px; }
+.contact-detail .detail-text { font-size: 0.95rem; }
+.contact-detail .detail-text strong { display: block; margin-bottom: 2px; }
+.contact-detail .detail-text span { color: var(--text-light); }
+
+.contact-form {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  border: 1px solid var(--card-border);
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid var(--card-border);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 16px;
+  background: var(--white);
+  transition: var(--transition);
+  color: var(--text);
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(45,90,61,0.08);
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.form-success {
+  text-align: center;
+  padding: 40px 20px;
+  display: none;
+}
+.form-success i { color: var(--primary); margin-bottom: 16px; }
+.form-success h3 { color: var(--primary); margin-bottom: 8px; }
+.form-success p { color: var(--text-light); }
+
+@media (max-width: 700px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 28px 20px; }
+}
+
+/* =================== FOOTER =================== */
+footer {
+  background: var(--text);
+  color: rgba(255,255,255,0.6);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+footer a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+  transition: var(--transition);
+}
+footer a:hover { color: var(--secondary); }
+.footer-links { margin-top: 12px; display: flex; justify-content: center; gap: 24px; }
+
+/* =================== LEGAL OVERLAYS =================== */
+.legal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+}
+.legal-overlay.open { display: flex; }
+.legal-content {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 48px 40px;
+  position: relative;
+}
+.legal-content h2 { margin-bottom: 24px; font-size: 1.6rem; }
+.legal-content h3 { margin-top: 24px; margin-bottom: 8px; font-size: 1.1rem; }
+.legal-content p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 12px; }
+.legal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.legal-close i { color: var(--text); }
+
+/* =================== COOKIE BANNER =================== */
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  max-width: 480px;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-lg);
+  z-index: 9998;
+  display: none;
+  border: 1px solid var(--card-border);
+}
+.cookie-banner.show { display: block; }
+.cookie-banner p { font-size: 0.88rem; color: var(--text-light); margin-bottom: 16px; }
+.cookie-banner p a { color: var(--primary); }
+.cookie-btns { display: flex; gap: 12px; }
+.cookie-btns .btn { padding: 10px 20px; font-size: 0.88rem; }
+
+/* =================== SCROLL ANIMATIONS =================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =================== WHATSAPP FLOAT =================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 998;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+  transition: var(--transition);
+  text-decoration: none;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+.whatsapp-float svg { width: 28px; height: 28px; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="https://www.coaching-vonfuerstenberg.de/wp-content/uploads/2021/08/kirsten-von-fuerstenberg-logo-final.png" alt="Kirsten von Fürstenberg Coaching & Beratung">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#angebote">Angebote</a>
+      <a href="#klarheitscheck">Klarheits-Check</a>
+      <a href="#ueber-mich">Über mich</a>
+      <a href="#stimmen">Referenzen</a>
+      <a href="#kontakt" class="nav-cta">Erstgespräch anfragen</a>
+    </div>
+    <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menü">
+      <i data-lucide="menu" style="width:28px;height:28px;color:var(--text)"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="clarity-line clarity-line-1"></div>
+  <div class="clarity-line clarity-line-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Coaching & Beratung · Geilenkirchen</span>
+        <h1 id="heroH1"></h1>
+        <p class="hero-sub">Du weißt, dass sich etwas ändern muss — aber der Weg ist noch nicht klar? In wenigen Sitzungen findest du neue Perspektiven, echte Lösungen und die Kraft, sie umzusetzen.</p>
+        <div class="hero-ctas">
+          <a href="#kontakt" class="btn btn-primary"><i data-lucide="message-circle" style="width:18px;height:18px"></i> Kostenloses Erstgespräch</a>
+          <a href="#klarheitscheck" class="btn btn-secondary"><i data-lucide="compass" style="width:18px;height:18px"></i> Klarheits-Check starten</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><i data-lucide="star"></i> Seit 2012</div>
+          <div class="trust-item"><i data-lucide="award"></i> Zertifizierter wingwave® Coach</div>
+          <div class="trust-item"><i data-lucide="shield-check"></i> Kostenlose Erstberatung</div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-accent"></div>
+        <div class="hero-image-accent-2"></div>
+        <div class="hero-image-wrapper">
+          <img src="https://www.coaching-vonfuerstenberg.de/wp-content/uploads/2021/09/kirsten-von-fuerstenberg-home.jpg" alt="Kirsten von Fürstenberg — Coaching & Beratung" width="500" height="600">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COUNTER BAND ===================== -->
+<div class="atmosphere-band">
+  <div class="container">
+    <div class="counter-grid">
+      <div class="counter-item reveal">
+        <span class="counter-number" data-target="13">0</span>
+        <span class="counter-label">Jahre Erfahrung</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-number" data-target="500">0</span>
+        <span class="counter-label">Coaching-Sitzungen+</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-number" data-target="7">0</span>
+        <span class="counter-label">Coaching-Methoden</span>
+      </div>
+      <div class="counter-item reveal">
+        <span class="counter-number" data-target="100">0</span>
+        <span class="counter-label">% vertraulich</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PROBLEM — "Kennst du das?" ===================== -->
+<section class="problem-section" id="problem">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Kennst du das?</span>
+      <h2>Wenn der Druck von allen Seiten kommt</h2>
+      <p style="color:var(--text-light);margin-top:16px;">Du funktionierst — aber innerlich wird es enger. Die Klarheit fehlt, Entscheidungen fallen schwer, und echte Erholung rückt in weite Ferne.</p>
+    </div>
+    <div class="problem-cards">
+      <div class="problem-card reveal">
+        <i data-lucide="brain" style="width:32px;height:32px"></i>
+        <h3>Gedankenkarussell</h3>
+        <p>Nachts kreisen die Gedanken, tagsüber funktionierst du — aber die innere Unruhe wächst. Entscheidungen fallen immer schwerer.</p>
+      </div>
+      <div class="problem-card reveal">
+        <i data-lucide="users" style="width:32px;height:32px"></i>
+        <h3>Führung unter Druck</h3>
+        <p>Die Erwartungen von oben und unten prallen aufeinander. Du willst es allen recht machen — und vergisst dabei dich selbst.</p>
+      </div>
+      <div class="problem-card reveal">
+        <i data-lucide="refresh-ccw" style="width:32px;height:32px"></i>
+        <h3>Veränderung ohne Kompass</h3>
+        <p>Umstrukturierung, neuer Job, Lebenskrise — du weißt, dass sich etwas ändern muss. Aber wo anfangen?</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <a href="#klarheitscheck" class="btn btn-primary"><i data-lucide="compass" style="width:18px;height:18px"></i> Finde heraus, wo du stehst</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIGNATURE FEATURE — KLARHEITS-CHECK ===================== -->
+<section class="signature-feature" id="klarheitscheck">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto 48px" class="reveal">
+      <span class="eyebrow">Dein Klarheits-Check</span>
+      <h2>Wo stehst du gerade?</h2>
+      <p style="color:var(--text-light);margin-top:12px">6 Fragen, 2 Minuten — und du weißt, welcher nächste Schritt für dich der richtige ist.</p>
+    </div>
+    <div class="quiz-wrapper reveal" id="quizWrapper">
+      <div class="quiz-progress" id="quizProgress"></div>
+      <div id="quizBody">
+        <p class="quiz-question" id="quizQuestion"></p>
+        <div class="quiz-options" id="quizOptions"></div>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="result-badge" id="resultBadge"></div>
+        <h3 id="resultTitle"></h3>
+        <p id="resultText"></p>
+        <a href="#kontakt" class="btn btn-primary" id="resultCta">Kostenloses Erstgespräch anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOLUTION / ANGEBOTE ===================== -->
+<section class="solution-section" id="angebote">
+  <div class="container">
+    <div style="text-align:center;max-width:650px;margin:0 auto 60px" class="reveal">
+      <span class="eyebrow">Klarheit in jeder Dimension</span>
+      <h2>Damit unterstütze ich dich</h2>
+    </div>
+    <div class="solution-grid">
+      <div class="solution-card reveal">
+        <i data-lucide="briefcase" style="width:28px;height:28px"></i>
+        <h3>Business Coaching</h3>
+        <p>Dich und andere gesund und erfolgreich führen — auch unter hohem Druck. Für Klarheit in Rolle, Strategie und Kommunikation.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div class="solution-card reveal">
+        <i data-lucide="heart" style="width:28px;height:28px"></i>
+        <h3>Personal Coaching</h3>
+        <p>Leichter und glücklicher durch neue Perspektiven. Wenn es privat festgefahren ist — oder eine Veränderung ansteht.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div class="solution-card reveal">
+        <i data-lucide="stethoscope" style="width:28px;height:28px"></i>
+        <h3>Führungskräfte in der Pflege</h3>
+        <p>Reflexionszeiten machen stark und resilient. Spezial-Coaching für die einzigartige Belastungssituation in der Pflege.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div class="solution-card reveal">
+        <i data-lucide="users-round" style="width:28px;height:28px"></i>
+        <h3>Teamcoaching & Prozessbegleitung</h3>
+        <p>Konflikte lösen, Umstrukturierungen meistern, Zusammenarbeit stärken. Für Teams, die wieder an einem Strang ziehen wollen.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div class="solution-card reveal">
+        <i data-lucide="eye" style="width:28px;height:28px"></i>
+        <h3>Supervision</h3>
+        <p>Der Blick über den Tellerrand — berufliches Handeln reflektieren und professionell wachsen. Einzel oder im Team.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+      <div class="solution-card reveal">
+        <i data-lucide="zap" style="width:28px;height:28px"></i>
+        <h3>wingwave® Coaching</h3>
+        <p>Leistungsstark ohne Emotionsblockaden. Die wissenschaftlich fundierte Methode für schnelle und nachhaltige Veränderung.</p>
+        <a href="#kontakt" class="card-link">Erstgespräch anfragen <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      </div>
+    </div>
+    <div style="text-align:center" class="reveal">
+      <a href="#kontakt" class="btn btn-gold"><i data-lucide="calendar" style="width:18px;height:18px"></i> Lass uns gemeinsam starten</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOCIAL PROOF ===================== -->
+<section class="proof-section" id="stimmen">
+  <div class="container">
+    <div style="max-width:550px;margin:0 auto 48px;text-align:center" class="reveal">
+      <span class="eyebrow">Das sagen Klienten</span>
+      <h2>Veränderung, die man spürt</h2>
+    </div>
+    <div class="testimonial-carousel">
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Gutes Coaching ist das perfekte Werkzeug zur persönlichen Weiterentwicklung — wir danken Frau von Fürstenberg für ihre wertvolle Unterstützung!</blockquote>
+        <div class="author">Marion Peters<span>Vorstand Caritasverband Heinsberg</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Das Coaching hat mich schneller weitergebracht und war nachhaltiger, als meine verschiedenen Therapien vorher.</blockquote>
+        <div class="author">Anonym<span>Privatkunde mit Burnoutsymptomen</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Jetzt sehe ich wieder klarer, konnte Lösungen entwickeln und weiß wieder, was der nächste Schritt für mich ist. Das Coaching hat sich gelohnt!</blockquote>
+        <div class="author">Anonym<span>Geschäftsführer Ambulanter Pflegedienst</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Ich habe wieder neue Perspektiven gewonnen, verstehe mein System besser und der Umgang mit meinen Mitarbeitenden geht mir viel leichter von der Hand.</blockquote>
+        <div class="author">Anonym<span>Geschäftsführer Handwerk</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Frau von Fürstenberg ist eine sehr empathische, kompetente Führungskräfte-Beraterin. Selbst in der Pandemie-Zeit funktioniert das Coaching mit ihr perfekt.</blockquote>
+        <div class="author">Sabine Beikirch<span>Leiterin Digitalisierung, Energieversorger</span></div>
+      </div>
+      <div class="testimonial-card">
+        <span class="quote-mark">"</span>
+        <blockquote>Mit großer Empathie und professionellen Methoden begleitet Frau von Fürstenberg Mitarbeiter unserer Häuser bei der Supervision. Wir sind dankbar sie als Partnerin zu haben.</blockquote>
+        <div class="author">Volker Kratz<span>Geschäftsführer Alten- und Pflegeheime St. Josef gGmbH</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="process-section" id="ablauf">
+  <div class="container">
+    <div style="text-align:center;max-width:550px;margin:0 auto" class="reveal">
+      <span class="eyebrow">Dein Weg zur Klarheit</span>
+      <h2>So läuft dein Coaching ab</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-number">1</div>
+        <h3>Erstgespräch</h3>
+        <p>Kostenlos und unverbindlich — am Telefon oder per Videochat. Wir klären dein Anliegen und ob die Chemie stimmt.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">2</div>
+        <h3>Auftragsklärung</h3>
+        <p>Gemeinsam definieren wir dein Ziel, die passende Methode und den Umfang — individuell auf dich zugeschnitten.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">3</div>
+        <h3>Coaching-Sitzungen</h3>
+        <p>Kurzzeitcoaching mit echten Ergebnissen. In der Regel reichen wenige Sitzungen für spürbare Veränderung.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">4</div>
+        <h3>Neue Klarheit</h3>
+        <p>Du gehst mit konkreten Lösungen, neuen Perspektiven und der Kraft, sie im Alltag umzusetzen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÜBER MICH ===================== -->
+<section class="about-section" id="ueber-mich">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="https://www.coaching-vonfuerstenberg.de/wp-content/uploads/2021/09/kirsten-von-fuerstenberg-ueber-mich.jpg" alt="Kirsten von Fürstenberg" width="500" height="600">
+      </div>
+      <div class="about-content reveal">
+        <span class="eyebrow">Über mich</span>
+        <h2>Kirsten von Fürstenberg</h2>
+        <p class="about-text">Als Coach stelle ich deine Interessen und Bedürfnisse in den Mittelpunkt. Meine Arbeit ist von Vertrauen, Loyalität und einer ordentlichen Portion Humor geprägt. Was mich antreibt: Menschen zu stärken ist meine Passion.</p>
+        <p class="about-text">Den Menschen sehe ich ganzheitlich — als Einheit von Körper, Geist und Seele. Mit meiner langjährigen Leitungserfahrung, ausgeprägter Reflexionsfähigkeit und individuell angepassten Methoden des Kurzzeitcoachings bringen wir gemeinsam Klarheit in schwierige Situationen.</p>
+        <div class="about-qualifications">
+          <span class="qual-tag">Dipl.-Sozialpädagogin</span>
+          <span class="qual-tag">Systemische Beratung</span>
+          <span class="qual-tag">wingwave® Coach</span>
+          <span class="qual-tag">NLP</span>
+          <span class="qual-tag">Hypnotherapie</span>
+          <span class="qual-tag">Resilienztraining</span>
+          <span class="qual-tag">Seit 2012</span>
+        </div>
+        <a href="#kontakt" class="btn btn-primary" style="margin-top:8px"><i data-lucide="message-circle" style="width:18px;height:18px"></i> Lass uns persönlich sprechen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<div class="cta-band">
+  <div class="container reveal">
+    <h2>Bereit für den ersten Schritt?</h2>
+    <p>Das kostenlose Erstgespräch ist der einfachste Weg zu mehr Klarheit. Unverbindlich, vertraulich, auf Augenhöhe.</p>
+    <a href="#kontakt" class="btn btn-gold"><i data-lucide="phone" style="width:18px;height:18px"></i> Erstgespräch anfragen</a>
+  </div>
+</div>
+
+<!-- ===================== KONTAKT — LETZTE SEITE ===================== -->
+<section class="contact-section" id="kontakt">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Letzte Seite — dein erster Schritt</span>
+        <h2>Lass uns reden.</h2>
+        <p>Das Erstgespräch ist kostenlos und unverbindlich — telefonisch oder per Videochat. Schreib mir, was dich bewegt, und wir finden einen Termin.</p>
+
+        <div class="contact-detail">
+          <div class="icon-circle"><i data-lucide="phone"></i></div>
+          <div class="detail-text"><strong>Telefon</strong><span>02451 9944739</span></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon-circle"><i data-lucide="mail"></i></div>
+          <div class="detail-text"><strong>E-Mail</strong><span>info@coaching-vonfuerstenberg.de</span></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon-circle"><i data-lucide="map-pin"></i></div>
+          <div class="detail-text"><strong>Praxis</strong><span>Gerhard-Schümmer-Str. 24, 52511 Geilenkirchen</span></div>
+        </div>
+        <div class="contact-detail">
+          <div class="icon-circle"><i data-lucide="clock"></i></div>
+          <div class="detail-text"><strong>Auch online</strong><span>Coaching per Videochat möglich</span></div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal" id="contactFormWrapper">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="DEIN-WEB3FORMS-KEY">
+          <input type="hidden" name="subject" value="Neue Anfrage über coaching-vonfuerstenberg.de">
+          <input type="hidden" name="from_name" value="Website Coaching von Fürstenberg">
+          <input type="checkbox" name="botcheck" style="display:none">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Dein Name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="Für Rückruf">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required placeholder="Deine E-Mail">
+          </div>
+          <div class="form-group">
+            <label for="interest">Was beschäftigt dich?</label>
+            <select id="interest" name="interest">
+              <option value="">Bitte wählen</option>
+              <option>Business Coaching</option>
+              <option>Personal Coaching</option>
+              <option>Führungskräfte-Coaching Pflege</option>
+              <option>Teamcoaching</option>
+              <option>Supervision</option>
+              <option>wingwave® Coaching</option>
+              <option>Resilienztraining</option>
+              <option>Anderes Anliegen</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Deine Nachricht</label>
+            <textarea id="message" name="message" placeholder="Erzähl mir kurz, was dich bewegt..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i data-lucide="send" style="width:18px;height:18px"></i> Erstgespräch anfragen</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i data-lucide="check-circle" style="width:48px;height:48px"></i>
+          <h3>Nachricht gesendet!</h3>
+          <p>Danke für dein Vertrauen. Ich melde mich innerhalb von 24 Stunden bei dir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Kirsten von Fürstenberg · Coaching & Beratung · Geilenkirchen</p>
+    <div class="footer-links">
+      <a href="#" onclick="event.preventDefault();document.getElementById('impressumOverlay').classList.add('open')">Impressum</a>
+      <a href="#" onclick="event.preventDefault();document.getElementById('datenschutzOverlay').classList.add('open')">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLOAT ===================== -->
+<a href="https://wa.me/4924519944739" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ===================== COOKIE BANNER ===================== -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>Diese Website verwendet Cookies für Analyse und Werbung. <a href="#" onclick="event.preventDefault();document.getElementById('datenschutzOverlay').classList.add('open')">Mehr erfahren</a></p>
+  <div class="cookie-btns">
+    <button class="btn btn-primary" onclick="acceptCookies()">Akzeptieren</button>
+    <button class="btn btn-secondary" onclick="declineCookies()">Nur notwendige</button>
+  </div>
+</div>
+
+<!-- ===================== IMPRESSUM OVERLAY ===================== -->
+<div class="legal-overlay" id="impressumOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="legal-content">
+    <button class="legal-close" onclick="this.closest('.legal-overlay').classList.remove('open')" aria-label="Schließen"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    <h2>Impressum</h2>
+    <h3>Angaben gemäß § 5 TMG</h3>
+    <p>Kirsten von Fürstenberg<br>Coaching & Beratung<br>Gerhard-Schümmer-Str. 24<br>52511 Geilenkirchen</p>
+    <h3>Kontakt</h3>
+    <p>Telefon: 02451 9944739<br>E-Mail: info@coaching-vonfuerstenberg.de</p>
+    <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+    <p>Kirsten von Fürstenberg<br>Gerhard-Schümmer-Str. 24<br>52511 Geilenkirchen</p>
+    <h3>Streitschlichtung</h3>
+    <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <h3>Haftung für Inhalte</h3>
+    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+    <h3>Haftung für Links</h3>
+    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+  </div>
+</div>
+
+<!-- ===================== DATENSCHUTZ OVERLAY ===================== -->
+<div class="legal-overlay" id="datenschutzOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="legal-content">
+    <button class="legal-close" onclick="this.closest('.legal-overlay').classList.remove('open')" aria-label="Schließen"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    <h2>Datenschutzerklärung</h2>
+    <h3>1. Verantwortlicher</h3>
+    <p>Kirsten von Fürstenberg, Gerhard-Schümmer-Str. 24, 52511 Geilenkirchen, info@coaching-vonfuerstenberg.de</p>
+    <h3>2. Hosting</h3>
+    <p>Diese Website wird bei einem deutschen Hosting-Anbieter gehostet. Beim Besuch der Website werden automatisch Informationen (Server-Logfiles) erhoben. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <h3>3. Cloudflare</h3>
+    <p>Wir nutzen Cloudflare als CDN und Sicherheitsdienst. Cloudflare kann Zugriffsdaten verarbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <h3>4. Google Fonts</h3>
+    <p>Diese Seite nutzt Google Fonts. Beim Aufruf werden Daten (z.B. IP-Adresse) an Google-Server übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <h3>5. Google Ads / Conversion Tracking</h3>
+    <p>Wir nutzen Google Ads mit Conversion Tracking. Dies erfolgt nur mit deiner Einwilligung über den Cookie-Banner. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO.</p>
+    <h3>6. Web3Forms</h3>
+    <p>Für das Kontaktformular nutzen wir Web3Forms. Deine eingegebenen Daten werden zur Bearbeitung deiner Anfrage per E-Mail weitergeleitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.</p>
+    <h3>7. Lucide Icons</h3>
+    <p>Wir verwenden Lucide Icons. Diese werden von einem CDN geladen. Dabei können Nutzungsdaten übertragen werden.</p>
+    <h3>8. Cookies</h3>
+    <p>Diese Website setzt nur technisch notwendige Cookies (Cookie-Consent). Analyse-Cookies werden erst nach deiner Einwilligung gesetzt.</p>
+    <h3>9. Deine Rechte</h3>
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Kontaktiere mich hierzu jederzeit unter info@coaching-vonfuerstenberg.de.</p>
+  </div>
+</div>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+// ===== Lucide Icons Init =====
+lucide.createIcons();
+
+// ===== Scroll Restoration =====
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
+// ===== Nav Scroll Effect =====
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ===== Hero Word-by-Word Reveal =====
+(function() {
+  const words = ['Klarheit', 'gewinnen.', 'Lösungen', 'entwickeln.', 'Handlungsfähig', 'sein.'];
+  const h1 = document.getElementById('heroH1');
+  words.forEach((w, i) => {
+    const span = document.createElement('span');
+    span.className = 'hero-h1-word';
+    span.textContent = w + ' ';
+    span.style.animationDelay = (0.15 + i * 0.12) + 's';
+    h1.appendChild(span);
+  });
+})();
+
+// ===== Scroll Reveal =====
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.15 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+// ===== Animated Counters =====
+const counters = document.querySelectorAll('.counter-number');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const target = +el.dataset.target;
+      let current = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.round(current);
+        if (target === 100) el.textContent = Math.round(current) + '%';
+        if (target === 500) el.textContent = Math.round(current) + '+';
+      }, 25);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => counterObserver.observe(c));
+
+// ===== KLARHEITS-CHECK QUIZ =====
+(function() {
+  const questions = [
+    { q: 'Wie oft kreisen deine Gedanken abends um berufliche Themen?', o: ['Selten — ich kann gut abschalten', 'Manchmal, aber ich finde zurück', 'Regelmäßig — Abschalten fällt mir schwer', 'Fast jeden Abend — ich komme kaum zur Ruhe'], v: [1, 2, 3, 4] },
+    { q: 'Wie sicher fühlst du dich in deiner aktuellen Rolle?', o: ['Sehr sicher — ich weiß, wo ich stehe', 'Überwiegend gut, mit vereinzelten Zweifeln', 'Unsicher — vieles fühlt sich unklar an', 'Überfordert — ich zweifle täglich'], v: [1, 2, 3, 4] },
+    { q: 'Wie gehst du mit schwierigen Entscheidungen um?', o: ['Strukturiert — ich entscheide zügig', 'Manchmal brauche ich länger, finde aber Lösungen', 'Ich schiebe Entscheidungen oft auf', 'Ich fühle mich gelähmt und handlungsunfähig'], v: [1, 2, 3, 4] },
+    { q: 'Wie beschreibst du dein Energielevel im Alltag?', o: ['Gut — ich habe genug Kraft für alles', 'Schwankend — es gibt gute und schlechte Tage', 'Eher niedrig — ich funktioniere, aber spüre die Erschöpfung', 'Am Limit — ich brauche dringend Veränderung'], v: [1, 2, 3, 4] },
+    { q: 'Hast du eine Person, mit der du offen über berufliche Herausforderungen sprechen kannst?', o: ['Ja, ich habe ein gutes Netzwerk', 'Teilweise — aber nicht für alles', 'Kaum — ich trage vieles allein', 'Nein — mir fehlt ein neutraler Sparringpartner'], v: [1, 2, 3, 4] },
+    { q: 'Was wünschst du dir am meisten für die nächsten 3 Monate?', o: ['Bestätigung und Feinschliff', 'Mehr Klarheit in einer konkreten Frage', 'Einen Weg aus einer festgefahrenen Situation', 'Grundlegende Veränderung — so kann es nicht weitergehen'], v: [1, 2, 3, 4] }
+  ];
+
+  const results = [
+    { max: 10, badge: 'Stabile Basis', title: 'Du stehst gut da.', text: 'Deine Basis ist stabil. Ein gezieltes Coaching kann dir helfen, den nächsten Schritt zu gehen — ob Feinschliff in der Führung oder ein neues Ziel. Wollen wir gemeinsam schauen, was noch möglich ist?' },
+    { max: 16, badge: 'Wachstums-Phase', title: 'Es wird Zeit für neue Perspektiven.', text: 'Du spürst, dass manches nicht rund läuft — aber hast die Kraft, es zu ändern. Ein Coaching-Impuls kann jetzt den entscheidenden Unterschied machen. Lass uns im Erstgespräch gemeinsam dein Thema schärfen.' },
+    { max: 24, badge: 'Klarheit dringend nötig', title: 'Dein Klarheits-Bedarf ist hoch.', text: 'Der Druck ist spürbar, Klarheit fehlt an mehreren Stellen. Genau hier setzt mein Kurzzeitcoaching an — in wenigen Sitzungen findest du zurück zu klaren Entscheidungen und neuer Handlungsfähigkeit.' }
+  ];
+
+  let current = 0, score = 0;
+  const progress = document.getElementById('quizProgress');
+  const qEl = document.getElementById('quizQuestion');
+  const oEl = document.getElementById('quizOptions');
+  const resultEl = document.getElementById('quizResult');
+  const bodyEl = document.getElementById('quizBody');
+
+  // Build progress
+  questions.forEach(() => { const s = document.createElement('div'); s.className = 'step'; progress.appendChild(s); });
+
+  function render() {
+    const q = questions[current];
+    qEl.textContent = q.q;
+    oEl.innerHTML = '';
+    q.o.forEach((opt, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'quiz-option';
+      btn.textContent = opt;
+      btn.onclick = () => answer(q.v[i]);
+      oEl.appendChild(btn);
+    });
+    // Update progress
+    progress.querySelectorAll('.step').forEach((s, i) => {
+      s.className = 'step' + (i < current ? ' done' : '') + (i === current ? ' active' : '');
+    });
+  }
+
+  function answer(val) {
+    score += val;
+    current++;
+    if (current < questions.length) {
+      render();
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+    bodyEl.style.display = 'none';
+    progress.querySelectorAll('.step').forEach(s => s.className = 'step done');
+    const r = results.find(r => score <= r.max) || results[results.length - 1];
+    document.getElementById('resultBadge').textContent = r.badge;
+    document.getElementById('resultTitle').textContent = r.title;
+    document.getElementById('resultText').textContent = r.text;
+    resultEl.style.display = 'block';
+  }
+
+  render();
+})();
+
+// ===== Form Submit =====
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = this;
+  const formData = new FormData(form);
+  fetch(form.action, { method: 'POST', body: formData })
+    .then(r => r.json())
+    .then(d => {
+      if (d.success) {
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+        // Conversion tracking
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', { 'send_to': 'AW-XXXXX/YYYYY' });
+        }
+      }
+    })
+    .catch(() => alert('Bitte versuche es erneut oder ruf direkt an: 02451 9944739'));
+});
+
+// ===== Cookie Banner =====
+function acceptCookies() {
+  localStorage.setItem('cookie_consent', 'all');
+  document.getElementById('cookieBanner').classList.remove('show');
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', { 'ad_storage': 'granted', 'analytics_storage': 'granted' });
+  }
+}
+function declineCookies() {
+  localStorage.setItem('cookie_consent', 'necessary');
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+if (!localStorage.getItem('cookie_consent')) {
+  setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
+}
+
+// ===== Close nav on link click (mobile) =====
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+</script>
+</body>
+</html>
